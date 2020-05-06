@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>quiz</title>
+  <meta charset="utf-8">
   <link type="text/css" rel="stylesheet" href="main.css">
 </head>
 <body>
 <main>
+  <section id="start">
+    <h3>Welcome to the Linux Trivia application</h3>
+    <h1>Lets get started!</h1>
+    <button id="startButton">Begin</button>
+  </section>
 <section class="prompt-box">
   <h6>LINUX TRIVIA</h6>
   <h3 id="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?</h3>
 </section><!--section-->
-<section id="answers">
+<section class="answers-box">
 <article>
 <div>
   <input type="radio" name="answer" value="" checked>
@@ -31,6 +37,11 @@
 </article>
 <aside>SCORE:</aside>
 </section><!--section-->
+<section id="end">
+  <h3>I hoped your interest in Linux continues to grow :)</h3>
+  <h1>That was fun!</h1>
+  <button id="endButton">Restart</button>
+</section>
 </main>
 </body>
 </html>
