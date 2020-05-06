@@ -9,7 +9,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
-main {
+main, #quiz-box {
 	width: 100%;
 	padding: 50px 0;
 	font-size: 1.25em;
@@ -19,14 +19,14 @@ main {
 	justify-content: center;
 	align-items: center;
 }
+#quiz-box{flex-flow:row wrap;}
 section {
 	width: 500px;
 	margin: 30px;
 }
-.prompt-box, article {
+.questions-box, article {
 	padding: 30px;
 }
-
 /********************************
 MAIN STYLES
 ********************************/
@@ -45,5 +45,6 @@ section div input {
 	margin: 10px;
 }
 #start, #end {
+  width: 80%;
 	padding: 100px 50px;
 }
