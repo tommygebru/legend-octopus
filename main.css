@@ -1,15 +1,49 @@
 /********************************
 BASE STYLES
 ********************************/
-*{background:rgba(0,0,0,.1)}
-body{margin:0; padding: 0;}
-main{width: 100%; padding:50px 0; font-size:1.25em;}
-section{width: 500px; margin: 30px;}
-.prompt-box, article{padding: 30px;}
-main{display:flex; flex-direction: column; justify-content: center; align-items: center;}
-section div{display:flex; justify-content: center; align-items: center;}
-article div{display:flex; justify-content: start; align-items: center; margin: 30px 0;}
-section div input{margin:10px;}
+
+* {
+	background: rgba(0, 0, 0, .1)
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+main {
+	width: 100%;
+	padding: 50px 0;
+	font-size: 1.25em;
+
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+section {
+	width: 500px;
+	margin: 30px;
+}
+.prompt-box, article {
+	padding: 30px;
+}
+
 /********************************
 MAIN STYLES
 ********************************/
+section div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+article div {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	margin: 30px 0;
+}
+section div input {
+	margin: 10px;
+}
+#start, #end {
+	padding: 100px 50px;
+}
