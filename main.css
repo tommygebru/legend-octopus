@@ -44,6 +44,7 @@ article div {
 section div input {
 	margin: 10px;
 }
+#quiz-box aside {margin: 50px 100px;}
 #start, #end {
   width: 80%;
 	padding: 100px 50px;
