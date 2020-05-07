@@ -11,7 +11,7 @@ body {
 }
 main, #quiz-box {
 	width: 100%;
-	padding: 50px 0;
+	padding: 30px 0;
 	font-size: 1.25em;
 
   display: flex;
@@ -44,8 +44,24 @@ article div {
 section div input {
 	margin: 10px;
 }
-#quiz-box aside {margin: 50px 100px;}
+#quiz-box article {width: 70%;}
+#quiz-box aside {margin: 0; padding: 30px;}
 #quiz-start, #quiz-end {
   width: 80%;
 	padding: 100px 50px;
+}
+
+
+
+/********************************
+M E D I A   Q U E R I E S
+********************************/
+@media only screen and (max-width: 700px) {
+	#quiz-box article {
+		font-size: 1rem;
+		width: 90%;
+	}
+		#quiz-box {
+			width:90%;
+		}
 }
