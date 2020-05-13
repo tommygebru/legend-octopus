@@ -93,4 +93,9 @@ $(document).ready(function() {
 				$("#question, #solution").text("");
 				addQuiz();
 				}
-			});//NextButton
+			});//click event
+			$("#quiz-end").on("click", "#restartButton", function(){
+				location.reload();
+			readyQuiz();
+			});	//click event
+			});//READY
