@@ -2,12 +2,15 @@
 BASE STYLES
 ********************************/
 
-/* {
-	background: rgba(0, 0, 0, .1)
-}*/
+
+* {background: rgba(0, 0, 0, .1);}
+
 body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
+	height: auto;
+	border:black 10px solid;
+	background: #f3f3f3;
 }
 main, #quiz-box {
 	width: 100%;
@@ -25,19 +28,12 @@ section {
 	width: 500px;
 	margin: 30px;
 }
-.questions-box, article {
-	padding: 30px;
-}
+
 /********************************
 MAIN STYLES
 ********************************/
 
 section div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-article div {
 	display: flex;
 	justify-content: start;
 	align-items: center;
@@ -57,18 +53,22 @@ section div input {
 	width: 80%;
 	padding: 100px 50px;
 }
+.choices-box div, label, input, button {cursor:pointer;}
+.choices-box div{padding: 15px 0;}
+.choices-box div:hover{background-color: rgb(83,66,236); color:#fff;}
+
+
 /********************************
 M E D I A   Q U E R I E S
 ********************************/
 
 @media only screen and (max-width: 700px) {
-	#quiz-box article {
-		font-size: 1rem;
-		width: 90%;
+	main {
+		font-size: 1.2rem;
 	}
-	#quiz-box {
-		width: 90%;
-	}
+	#quiz-box{padding: 10px;}
+	#quiz-box article{width:85%;}
+	section{margin: 10px;}
 	h6:not(#solution) {
 		text-transform: uppercase;
 	}
