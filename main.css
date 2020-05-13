@@ -13,13 +13,14 @@ main, #quiz-box {
 	width: 100%;
 	padding: 30px 0;
 	font-size: 1.25em;
-
-  display: flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-#quiz-box{flex-flow:row wrap;}
+#quiz-box {
+	flex-flow: row wrap;
+}
 section {
 	width: 500px;
 	margin: 30px;
@@ -30,6 +31,7 @@ section {
 /********************************
 MAIN STYLES
 ********************************/
+
 section div {
 	display: flex;
 	justify-content: center;
@@ -44,25 +46,30 @@ article div {
 section div input {
 	margin: 10px;
 }
-#quiz-box article {width: 70%;}
-#quiz-box aside {margin: 0; padding: 30px;}
+#quiz-box article {
+	width: 70%;
+}
+#quiz-box aside {
+	margin: 0;
+	padding: 30px;
+}
 #quiz-start, #quiz-end {
-  width: 80%;
+	width: 80%;
 	padding: 100px 50px;
 }
-
-
-
 /********************************
 M E D I A   Q U E R I E S
 ********************************/
+
 @media only screen and (max-width: 700px) {
 	#quiz-box article {
 		font-size: 1rem;
 		width: 90%;
 	}
-		#quiz-box {
-			width:90%;
-		}
-		h6:not(#solution){text-transform: uppercase;}
+	#quiz-box {
+		width: 90%;
+	}
+	h6:not(#solution) {
+		text-transform: uppercase;
+	}
 }
