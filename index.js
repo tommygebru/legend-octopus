@@ -61,3 +61,4 @@ $(document).ready(function() {
 				} //loop
 				$("#count").text(quizBox[scoresBox.count]["count"]);
 			}; //function
+			$("#nextButton").hide();
