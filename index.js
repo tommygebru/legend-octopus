@@ -48,3 +48,5 @@ let scoresBox = {
 	count: 0,
 	total: quizBox.length
 };//object
+$("#total").text(scoresBox.total);
+$("#count, #true, #false").text(0);
