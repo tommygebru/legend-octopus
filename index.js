@@ -65,7 +65,8 @@ $(document).ready(function() {
 	//hide button
 	$(".choices-box").on("click", "#submitButton", clickSubmit);
 
-	function clickSubmit() {
+	function clickSubmit(event) {
+		event.preventDefault();
 		$("#submitButton").hide();
 		$("#nextButton").show();
 		$("#solution").text(quizBox[scoresBox.count]["solution"]);
@@ -79,7 +80,8 @@ $(document).ready(function() {
 			$(".scores-box h6:first-child").css("background", "orangered");
 		}
 	}; //click event
-	$(".choices-box").on("click", "#nextButton", function() {
+	$(".choices-box").on("click", "#nextButton", function(event) {
+		event.preventDefault();
 		$(".scores-box h6:first-child").css("background", "orange");
 		if ((scoresBox.count + 1) === scoresBox.total) {
 			$("#quiz-box").hide();

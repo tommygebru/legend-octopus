@@ -23,7 +23,7 @@ main, #quiz-box {
 	align-items: center;
 }
 #quiz-box {
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 }
 section {
 	width: 500px;
