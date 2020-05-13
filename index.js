@@ -67,7 +67,7 @@ $(document).ready(function() {
 
 	function clickSubmit() {
 		$("#submitButton").hide();
-		$("#nextButton").show()
+		$("#nextButton").show();
 		$("#solution").text(quizBox[scoresBox.count]["solution"]);
 		if ($("input:checked").next().text() === quizBox[scoresBox.count]["solution"]) {
 			scoresBox.true++;
@@ -87,7 +87,7 @@ $(document).ready(function() {
 			$("#finalScore").html(`<h6>FINAL SCORE:  ${Math.floor((100*scoresBox.true)/scoresBox.total)} %</h6>`);
 		} else {
 			scoresBox.count++;
-			$("#nextButton").hide()
+			$("#nextButton").hide();
 			$("#submitButton").show();
 			$("#question, #solution").text("");
 			addQuiz();
