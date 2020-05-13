@@ -62,3 +62,19 @@ $(document).ready(function() {
 				$("#count").text(quizBox[scoresBox.count]["count"]);
 			}; //function
 			$("#nextButton").hide();
+			//hide button
+			$(".choices-box").on("click", "#submitButton", clickSubmit);
+			function clickSubmit(){
+				$("#submitButton").hide();
+				$("#nextButton").show()
+			$("#solution").text(quizBox[scoresBox.count]["solution"]);
+				if($("input:checked").next().text() === quizBox[scoresBox.count]["solution"]){
+						scoresBox.true++;
+						$("#true").text(scoresBox.true);
+						$(".scores-box h6:first-child").css("background","#20c200");
+					}else{
+						scoresBox.false++;
+						$("#false").text(scoresBox.false);
+						$(".scores-box h6:first-child").css("background","orangered");
+					}
+			};//click event
