@@ -42,3 +42,9 @@ let quizBox= [{
 	choices: ["kiosks, servers, mainframe computers, supercomputers", "phones, tablets, cars, rockets, aircraft, submarines", "smart appliances, robots, game consoles", "All of the above"],
 	solution: "All of the above"
 }];//array
+let scoresBox = {
+	true: 0,
+	false: 0,
+	count: 0,
+	total: quizBox.length
+};//object
