@@ -50,3 +50,13 @@ let scoresBox = {
 };//object
 $("#total").text(scoresBox.total);
 $("#count, #true, #false").text(0);
+//set to 0
+function addQuiz(){
+	$("#question").text(quizBox[scoresBox.count]["question"]);
+let choicesBox = document.getElementsByClassName("choices-box");
+ let getLabel = choicesBox[0].getElementsByTagName("LABEL");
+ for (let i = 0; i < quizBox[scoresBox.count]["choices"].length; i++) {
+ getLabel[i].innerHTML = quizBox[scoresBox.count]["choices"][i];
+}//loop
+	$("#count").text(quizBox[scoresBox.count]["count"]);
+};//function
