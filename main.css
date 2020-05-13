@@ -13,14 +13,16 @@ body {
 	border: black 10px solid;
 	background: #f3f3f3;
 }
-main, #quiz-box {
-	width: 100%;
-	padding: 30px 0;
-	font-size: 1.25em;
+.flex {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+#quiz-box {
+	width: 100%;
+	padding: 30px 0;
+	font-size: 1.25em;
 }
 #quiz-box {
 	flex-flow: column wrap;
@@ -28,6 +30,10 @@ main, #quiz-box {
 section {
 	width: 500px;
 	margin: 30px;
+}
+form {
+	width: 70%;
+	margin: 0 auto;
 }
 /********************************
 MAIN STYLES
@@ -81,6 +87,22 @@ h6 {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
+#finalScore {
+	text-indent: 30px;
+	background: #ff6b31;
+	padding: 30px 0;
+}
+.scores-box h6 {
+	background: white;
+	color: black;
+	border: 2px solid;
+	border-radius: 3px;
+}
+.scores-box h6:first-child {
+	background: #ffa927;
+	border: none;
+	color: white;
+}
 /********************************
 M E D I A   Q U E R I E S
 ********************************/
@@ -97,8 +119,5 @@ M E D I A   Q U E R I E S
 	}
 	section {
 		margin: 10px;
-	}
-	h6:not(h6#solution) {
-		text-transform: uppercase;
-	}
+}
 }
