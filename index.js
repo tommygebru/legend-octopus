@@ -79,3 +79,18 @@ $(document).ready(function() {
 					$(".scores-box h6:first-child").css("background", "orangered");
 				}
 			}; //click event
+			$(".choices-box").on("click", "#nextButton", function(){
+				$(".scores-box h6:first-child").css("background","orange");
+
+				if((scoresBox.count +1)===scoresBox.total){
+						$("#quiz-box").hide();
+						$("#quiz-end").show();
+						$("#finalScore").html(`<h6>FINAL SCORE:  ${Math.floor((100*scoresBox.true)/scoresBox.total)} %</h6>`);
+					}	else{
+					scoresBox.count++;
+					$("#nextButton").hide()
+					$("#submitButton").show();
+				$("#question, #solution").text("");
+				addQuiz();
+				}
+			});//NextButton
