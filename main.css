@@ -64,4 +64,5 @@ M E D I A   Q U E R I E S
 		#quiz-box {
 			width:90%;
 		}
+		h6:not(#solution){text-transform: uppercase;}
 }
