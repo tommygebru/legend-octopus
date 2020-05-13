@@ -2,14 +2,15 @@
 BASE STYLES
 ********************************/
 
-
+/*
 * {background: rgba(0, 0, 0, .1);}
+*/
 
 body {
 	margin: 0 auto;
 	padding: 0;
 	height: auto;
-	border:black 10px solid;
+	border: black 10px solid;
 	background: #f3f3f3;
 }
 main, #quiz-box {
@@ -28,7 +29,6 @@ section {
 	width: 500px;
 	margin: 30px;
 }
-
 /********************************
 MAIN STYLES
 ********************************/
@@ -53,11 +53,34 @@ section div input {
 	width: 80%;
 	padding: 100px 50px;
 }
-.choices-box div, label, input, button {cursor:pointer;}
-.choices-box div{padding: 15px 0;}
-.choices-box div:hover{background-color: rgb(83,66,236); color:#fff;}
-
-
+.choices-box div, label, input, button {
+	cursor: pointer;
+}
+.choices-box div {
+	padding: 15px 0;
+}
+.choices-box div:hover {
+	background-color: rgb(83, 66, 236);
+	color: #fff;
+}
+button {
+	border: 2px solid #ff6b31;
+	color: #ff6b31;
+	border-radius: 3%;
+	background: white;
+	width: 100px;
+	height: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+h6 {
+	background-color: #ff6b31;
+	color: #fff;
+	padding: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
 /********************************
 M E D I A   Q U E R I E S
 ********************************/
@@ -66,10 +89,16 @@ M E D I A   Q U E R I E S
 	main {
 		font-size: 1.2rem;
 	}
-	#quiz-box{padding: 10px;}
-	#quiz-box article{width:85%;}
-	section{margin: 10px;}
-	h6:not(#solution) {
+	#quiz-box {
+		padding: 10px;
+	}
+	#quiz-box article {
+		width: 85%;
+	}
+	section {
+		margin: 10px;
+	}
+	h6:not(h6#solution) {
 		text-transform: uppercase;
 	}
 }
