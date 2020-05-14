@@ -59,12 +59,11 @@ section div input {
 	width: 80%;
 	padding: 100px 50px;
 }
-
 .choices-box div, label, input, button {
 	cursor: pointer;
 }
-.choices-box{
-	margin-bottom:20px;
+.choices-box {
+	margin-bottom: 20px;
 }
 .choices-box div {
 	padding: 15px 0;
@@ -103,13 +102,15 @@ h6 {
 	border-radius: 3px;
 	margin: 0 auto 15px auto;
 }
-.scores-box .solution {width: 100%;
+.scores-box .solution {
+	width: 100%;
 	background: #ffa927;
 	border: none;
 	color: white;
 }
-.scores-box div{flex-flow: row wrap;}
-
+.scores-box div {
+	flex-flow: row wrap;
+}
 /********************************
 M E D I A   Q U E R I E S
 ********************************/
@@ -126,5 +127,5 @@ M E D I A   Q U E R I E S
 	}
 	section {
 		margin: 10px;
-}
+	}
 }
