@@ -59,8 +59,12 @@ section div input {
 	width: 80%;
 	padding: 100px 50px;
 }
+
 .choices-box div, label, input, button {
 	cursor: pointer;
+}
+.choices-box{
+	margin-bottom:20px;
 }
 .choices-box div {
 	padding: 15px 0;
@@ -97,12 +101,15 @@ h6 {
 	color: black;
 	border: 2px solid;
 	border-radius: 3px;
+	margin: 0 auto;
 }
-.scores-box h6:first-child {
+.scores-box .solution {width: 100%;
 	background: #ffa927;
 	border: none;
 	color: white;
 }
+.scores-box div{flex-direction: row;}
+
 /********************************
 M E D I A   Q U E R I E S
 ********************************/
