@@ -83,12 +83,14 @@ button {
 	letter-spacing: 2px;
 	font-weight: bold;
 }
-h6 {
-	background-color: #ff6b31;
-	color: #fff;
+h6{
 	padding: 15px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+}
+.questions-box h6 {
+	background-color: #ff6b31;
+	color: #fff;
 }
 #finalScore {
 	text-indent: 30px;
